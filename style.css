@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.2%;
+    line-height: 1.2;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(90deg, #fff, #efefef, #fff);
+    font-size: 1.8rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 0 3rem;
+    font-size: 1.3rem;
+    background: transparent;
+    color: #999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+}
+
+
+
+.navigastion{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.navigastion li {
+    list-style-type: none;
+  
+}
+
+.color{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.845);
+    text-transform: uppercase;
+
+}
+
+.header-btn:link,
+.header-btn:visited{
+    background-color: #7fc3fea2;
+    border-radius: 0.2rem;
+    position: relative;
+    right: -3rem;
+    padding: 1.7rem;
+
+}
+
+.logo{
+    color: #fff;
+    font-weight: 600;
+}
+
+.logo span{
+    color: #666;
+}
+
+.nav-visible-btn{
+    color: rgba(255, 255, 255, 0.699);
+    border: 1px solid #fff;
+    padding: 0 1rem;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    right: 1rem;
+    display: none;
+    z-index: 1000;
+   
+
+}
+
+.closeBtn{
+    font-size: 5rem;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    user-select: none;
+}
+
+
+/* Home section */
+.home{
+    background-image: url(images/img-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 90vh;
+    color: #ddd;
+   
+}
+
+.hm-left{
+    position: absolute;
+    top: 60%;
+    left: 3rem;
+    z-index: 0;
+}
+
+.hm-name{
+    color: #ddd;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hm-heading{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 100;
+    
+}
+
+.hm-right{
+    position: absolute;
+    top: 60%;
+    right: 3rem;
+    z-index: 0;
+}
+
+
+/* Resort Section */
+.budget-resorts {
+    padding: 1rem;
+}
+
+.budget-resorts .budg-content{
+    font-size: 1.8rem;
+    padding: 15rem 13rem;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.z-patter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 2rem;
+}
+
+.nature-img{
+    max-width: 45vw;
+    height: 100vh;
+}
+
+.img-content{
+   
+    position: relative;
+    top: 5%;
+    line-height: 2;
+    padding: 0 8rem;
+}
+
+.heading-content{
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.paragraph-content{
+    font-size: 1.7rem;
+    text-align: left;
+    color: #333;
+}
+
+.img-btn:link,
+.img-btn:visited{
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 1.5rem 3rem;
+    color: #222;
+    font-size: 1.5rem;
+    background: #ddd;
+}
+
+.img-btn:active,
+.img-btn:hover{
+    background: #fff;
+    border-radius: 0.1rem;
+}
+
+.z-pattern2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.pattern-2{
+    position: relative;
+    right: -3rem;
+}
+
+.z-patter3{
+    padding: 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Resoponsive Design */
+
+@media (max-width: 1266px) {
+    .nature-img{
+        max-width: 45vw;
+        height: 70vh;
+    }
+
+}
+
+@media (max-width: 1166px) {
+    html{
+        font-size: 50.2%;
+    }
+
+    .header{
+        padding: 0;
+    }
+    .nature-img{
+        max-width: 45vw;
+        height: 40vh;
+    }
+    .img-content{
+        position: relative;
+        top: 1%;
+        line-height: 2;
+        padding: 0 8rem;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (max-width: 932px) {
+    html{
+        font-size: 45.2%;
+    }
+    .header{
+        padding: 1.5rem 0;
+        
+    }
+
+    .logo{
+        font-size: 2.5rem;
+        position: relative;
+        left: 1rem;
+        
+    }
+
+    .nature-img{
+        max-width: 45vw;
+        height: 20vh;
+    }
+
+    .img-content{
+        position: relative;
+        top: 1%;
+        line-height: 1;
+        padding: 0 8rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .home{
+        height: 50vh;
+    }
+    .hm-left{
+        top: 50rem;
+    }
+   .hm-right{
+        font-size: 1.5rem;
+        top: 30rem;
+    };
+    .hm-left{
+        top: 50rem;
+        font-size: 1rem;
+    }
+   .hm-right{
+        font-size: 1rem;
+        top: 50rem;
+    }
+    .navigastion{
+       display: block;
+       position: absolute;
+       top: 0.1rem;
+       right: 0;
+       text-align: center;
+       font-size: 1.8rem;
+       line-height: 2;
+       background: #ddd;
+       width: 60%;
+       height: 30vh;
+       display: none;
+       transform: translateY(90deg);
+       z-index: 1000;
+       border-radius: 1rem;
+    }
+
+    .closeBtn{
+        position: absolute;
+        right: 0;
+        z-index: 1000;
+        font-size: 4rem;
+    }
+
+    .navigastion :hover{
+        text-decoration: underline;
+        color: #1900ff;
+        transform: translateX(10deg);
+    }
+
+    .navigastion li{
+       margin-top: 1rem;
+    }
+
+    .color{
+        color: #111;
+        font-size: 1.9rem;
+    }
+    .header-btn:link,
+    .header-btn:visited{
+        display: none;
+    }
+
+    .nav-visible-btn{
+        display: block;
+    }
+
+    .nav-visible-btn:hover{
+        background-color: rgba(0, 255, 255, 0.518);
+        color: #000;
+    }
+
+    .hm-name{
+        font-size: 1rem;
+    }
+    
+    .hm-heading{
+        font-size: 2rem;
+
+    } 
+}
+
+@media (max-width: 718px) {
+    .navigastion{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .home{
+        background-image: url(images/img-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 100%;
+        height: 30vh;
+        color: #ddd;
+    }
+    .hm-left{
+        top: 30rem;
+    }
+   .hm-right{
+        font-size: 1.5rem;
+        top: 30rem;
+    };
+    .hm-left{
+        top: 30rem;
+        font-size: 1rem;
+    }
+   .hm-right{
+        font-size: 1rem;
+        top: 30rem;
+    }
+    .z-patter{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        
+    }
+    .z-pattern2{
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+    .pattern-2{
+        grid-row: 1/ -1;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .budget-resorts .budg-content{
+        padding: 5rem 2rem;
+    }
+
+    .z-patter .img-content{
+        padding: 5rem 2rem;
+        
+    }
+
+    .nature-img{
+        max-width: 100%;
+        height: 20vh;
+    }
+    .pattern-2{
+        max-width: 90%;
+        height: 20vh;
+    }
+
+    .img-btn{
+        position: absolute;
+        left: 4rem;
+        bottom: -1rem;
+        width: 50%;
+        text-align: center;
+    }
+    .z-pattern2 .btn2{
+        position: relative;
+        top: 3rem;
+        left: -1.5rem;
+    }
+    
+}
